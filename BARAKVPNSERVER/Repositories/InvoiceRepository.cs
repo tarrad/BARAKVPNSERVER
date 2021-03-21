@@ -107,7 +107,7 @@ namespace BARAKVPNSERVER.Repositories
             {
                 pageNo = 1;
             }
-            using (var _context = new DataContext())
+            using (var _context = new DataContext())   
             {
                 var invoices  =  _context.InvoiceDocuments.Where(a => a.GroupId == groupId).Skip(10 * (pageNo-1)).Take(10).ToList();
                
