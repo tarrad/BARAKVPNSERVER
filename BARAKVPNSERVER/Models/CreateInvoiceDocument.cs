@@ -65,7 +65,7 @@ namespace BARAKVPNSERVER.Models
         public Income()
         {
             currency = "USD";
-            vatType = 1;
+            vatType = 1; 
             currencyRate = 1;
         }
 
